@@ -1,0 +1,183 @@
+//media sizes
+@screen-xxl: 2400px;
+@screen-lg: 1300px;
+@screen-sm: 850px;
+
+@max-mobile: 600px;
+@screen-md: 1250px; 
+@screen-xxs: 400px;
+
+@width-column: 30%;
+@width-column-lg: 31%;
+@width-column-md: 45%;
+@width-column-sm: 100%;
+
+@screen-xl: 1900px;
+@screen-md: 1000px;
+
+
+//color
+@green: #adde00;
+@gray: #415167;
+@dark-blue: #34475e;
+@light-blue: ##6498AA;
+
+@yellow: #E2DF46;
+@yellow-light: #fec00f;
+@mustard: #966a10;
+@purple: #a25ace;
+@light-pink: #fffef7;
+@gray: #615e5e;
+@dark-red: #2D0A14;
+@light-purple: #c9bfbc;
+@blue: #6673FF;
+@dark-blue: #003049;
+
+
+//content
+.structure-container {
+	width: 100%;
+	min-height: 100vh;
+	.structure-container__content {
+		padding-top: 100px;
+		padding-bottom: 80px;
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: @screen-lg;
+		margin: 0 auto;
+		// .structure-block {
+		// 	p:last-of-type {
+		// 		margin-bottom: 0px; 
+		// 	}
+		// }
+	}
+	@media screen and (min-width: @screen-lg) {
+		.structure-container__content {
+			max-width: @screen-xl;
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		.structure-container__content {
+			padding-left: 5px;
+			padding-right: 5px;
+			// max-width: @screen-sm;
+		}
+	}
+}
+
+.color-green {
+	background-color: @green;
+	color: white;
+}
+.color-dark-blue {
+	background-color: @dark-blue;
+	color: white;
+}
+.color-light-blue {
+	background-color: @light-blue;
+	color: white;
+}
+
+.structure-block {
+	display: flex;
+	justify-content: center;
+	.structure-block__center {
+		margin: 0px auto 20px auto;
+		width: @width-column;
+	}
+	@media screen and (min-width: @screen-lg) {
+		.structure-block__center {
+			margin: 0px auto 20px auto;
+			width: @width-column-lg;
+		}
+	}
+	@media screen and (max-width: @screen-md) {
+		.structure-block__center {
+			width: @width-column-md;
+		}
+	}
+	@media screen and (max-width: @screen-sm) {
+		.structure-block__center {
+			width: @width-column-sm;
+		}
+	}
+}
+
+//FONT
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url('../resources/font/CircularStd-Bold.otf') format('truetype');
+  font-weight: 600; 
+}
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-Book.otf') format('truetype');
+  font-weight: 400; 
+}
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-Medium.otf') format('truetype');
+  font-weight: 500; 
+}
+@font-face {
+  font-family: CircularStd;
+  src: url('../resources/font/CircularStd-BlackItalic.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url('../resources/font/helveticaneue-regular.ttf') format('truetype');
+  font-weight: 500; 
+}
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url('../resources/font/neue-helvetica-bold.ttf') format('truetype');
+  font-weight: 600; 
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/icon?family=Material+Icons); /* For IE6-8 */
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+//Columns
+.structure-justify-start {
+	justify-content: flex-start !important;
+}
+.structure-text-left {
+	text-align: left !important;
+}
+body {
+	// max-width: 1400px;
+	// margin: 0 auto;
+}

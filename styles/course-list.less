@@ -1,0 +1,105 @@
+.course-list {
+	display: flex;
+	display: flex;
+	width: 80%;
+	max-width: 1300px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	.course-list__item {
+		margin-bottom: 15px;
+		width: 550px;
+		.course-list__item__box {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding: 30px 20px;
+			border-radius: 20px;
+
+			.course-list__item__box__title {
+				width: 70%;
+				> * {
+					color: white;
+				}
+				h4 {
+					text-transform: uppercase;
+					margin-bottom: 20px;
+				}
+			}
+
+			.material-icons-round {
+				font-size: 50px;
+				transform: rotate(0deg);
+				transition: transform 0.4s;
+				margin-top: -15px;
+				color: @dark-blue;
+			}
+		}
+		.course-list__item__dropdown {
+			display: none;
+			border: 1px solid @green;
+			border-radius: 20px;
+			.course-list__item__dropdown__item {
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				padding: 20px 10px 20px 20px;
+				&:after {
+					content: "";
+					height: 1px;
+					background-color: @green;
+					position: absolute;
+					right: 20px;
+					left: 20px;
+					top: 0;
+				}
+				>img {
+					width: 70px;
+					margin-right: 10px;
+				}
+
+				.course-list__item__dropdown__item-text {
+			    width: 60%;
+			    margin-right: 10px;
+					.course-list__item__dropdown__item-text__title {
+						display: flex;
+						align-items: center;
+						margin-bottom: 20px;
+						>h4 {
+							color: @green;
+							text-transform: uppercase;
+						}
+						img {
+							margin-left: 10px;
+							width: 23px;
+						}
+					}
+				}
+				.course-list__item__dropdown__item__btn {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					h5 {
+						color: @green;
+						margin-bottom: 10px;
+					}
+				}
+
+			}
+		}
+	}
+	.course-list__item__box.active {
+		.material-icons-round {
+			transition: transform 0.4s;
+			transform: rotate(-180deg);
+		}
+	}
+	.course-list__item__box.active ~ .course-list__item__dropdown {
+	 	display: block;
+	}
+}
