@@ -20,7 +20,7 @@ function testimonial() {
 			// ob_start();
 			?>
 
-				<div class="testimonial">
+				<div id ="depoimentos"class="testimonial">
 					<div class="testimonial__items">
 						<?php foreach ($block['items'] as $items) : ?>
 							<div class="testimonial__item">

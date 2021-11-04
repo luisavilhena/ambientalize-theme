@@ -1,4 +1,4 @@
-	<footer>
+	<footer id="contatos">
 		<div class="footer__content">
 			<div class="footer__content-first-line">
 				<img class=""
