@@ -1,30 +1,58 @@
 @import './structure.less';
 
 footer {
-	border-top: 1px solid @gray;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	z-index: 99;
+	padding: 40px;
+	background-color: @green;
 	.footer__content {
-		margin-top: 5px;
-		margin-bottom: 5px;
-		padding-right: 15px;
-		padding-left: 15px;
-		width: 100%;
-		.footer__content__icons {
+		    max-width: 500px;
+		    margin: 0 auto;
+		.footer__content-first-line {
 			display: flex;
+			align-items: flex-start;
 			justify-content: center;
-			a {
-				margin-right: 29px;
-				svg {
-					width: 20px;
-					height: 20px;
+			> img {
+				margin-right: 30px;
+			}
+			.footer__content-first-line__social-media {
+				h4 {
+					text-align: center;
+					color: white;
+					margin-bottom: 20px;
+				}
+				div {
+					display: flex;
+					a {
+						display: block;
+						margin-right: 10px;
+						&:last-of-type {
+							margin-right: 0px;
+						}
+					}
 				}
 			}
 		}
+		.footer__content-second-line {
+			margin-top: 40px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			max-width: 430px;
+			margin-right: auto;
+			margin-left: auto;
+			> * {
+				color: white;
+				text-decoration: none;
+			}
+			a {
+				margin-bottom: 10px;
+			}
+			p {
+				margin-top: 30px;
+				text-align: center;
+			}
+		}
 	}
-	
 }
 @media screen and (max-width: @screen-sm) {
 	footer {

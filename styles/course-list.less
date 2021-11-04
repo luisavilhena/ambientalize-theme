@@ -1,17 +1,16 @@
 .course-list {
 	display: flex;
-	display: flex;
-	width: 80%;
-	max-width: 1300px;
+	max-width: 1250px;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
+
 	.course-list__item {
-		margin-bottom: 15px;
+		margin:20px 25px;
 		width: 550px;
 		.course-list__item__box {
 			display: flex;
@@ -29,14 +28,6 @@
 					text-transform: uppercase;
 					margin-bottom: 20px;
 				}
-			}
-
-			.material-icons-round {
-				font-size: 50px;
-				transform: rotate(0deg);
-				transition: transform 0.4s;
-				margin-top: -15px;
-				color: @dark-blue;
 			}
 		}
 		.course-list__item__dropdown {
@@ -101,5 +92,75 @@
 	}
 	.course-list__item__box.active ~ .course-list__item__dropdown {
 	 	display: block;
+	}
+	.material-icons-round {
+		font-size: 50px;
+		transform: rotate(0deg);
+		transition: transform 0.4s;
+		margin-top: -15px;
+		color: inherit;
+	}
+}
+
+.color-green {
+	.material-icons-round {
+		color: @dark-blue;
+	}
+}
+.color-green ~ .course-list__item__dropdown {
+	a.btn {
+		background-color: @dark-blue;
+	}
+}
+
+.color-dark-blue {
+	.material-icons-round {
+		color: @green;
+	}
+}
+.color-dark-blue ~ .course-list__item__dropdown {
+	a.btn {
+		background-color: @dark-blue;
+	}
+}
+
+.color-dark-blue-2 {
+	.material-icons-round {
+		color: @green;
+	}
+}
+.color-dark-blue-2 ~ .course-list__item__dropdown {
+	a.btn {
+		background-color: @dark-blue-2 !important;
+	}
+}
+
+.color-light-blue {
+	.material-icons-round {
+		color: @green;
+	}
+}
+.color-light-blue~.course-list__item__dropdown {
+	a.btn {
+		background-color: @light-blue !important;
+	}
+}
+
+.color-light-blue-2 {
+	.material-icons-round {
+		color: @green;
+	}
+}
+.color-light-blue-2 ~ .course-list__item__dropdown {
+	a.btn {
+		background-color: @light-blue-2 !important;
+	}
+}
+
+@media screen and (max-width: @screen-md) {
+	.course-list {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }

@@ -8,11 +8,14 @@ add_action( 'after_setup_theme', 'studio_viridiana' );
 function course_list() {
 	Block::make( 'Lista de Cursos' )
 		->add_fields( array(
+			Field::make('text', 'menulink', 'Link para o menu'),
 			Field::make( 'select', 'select', __( 'Background options' ) )
 				->set_options( array(
 					'color-green' => verde,
 					'color-light-blue' => azul_claro,
-					'color-dark-black' => azul_escuro,
+					'color-light-blue-2' => azul_claro_2,
+					'color-dark-blue' => azul_escuro,
+					'color-dark-blue-2' => azul_escuro_2,
 				) ),
 			Field::make('complex', "list", "Cursos")
 			->add_fields(array(
@@ -35,7 +38,7 @@ function course_list() {
  
 			// ob_start();
 			?>
-			<div class="course-list">
+			<div id='<?php echo $block['menulink']; ?>' class="course-list">
 				<?php foreach ($block['list'] as $items) : ?>
 				<div class="course-list__item">
 					<div class="course-list__item__box <?php echo $block['select']; ?>">

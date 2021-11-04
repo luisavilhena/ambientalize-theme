@@ -21,17 +21,22 @@ function testimonial() {
 			?>
 
 				<div class="testimonial">
-					<?php foreach ($block['items'] as $items) : ?>
-						<div class="testimonial__item">
-							<img src="<?php echo get_template_directory_uri() ?>/resources/icons/balao.png">
-							<div class="testimonial__item__text">
-								<p><?php echo  $items['text']; ?></p>
-								<h4>
-									<?php echo  $items['author']; ?>
-								</h4>
+					<div class="testimonial__items">
+						<?php foreach ($block['items'] as $items) : ?>
+							<div class="testimonial__item">
+								<img src="<?php echo get_template_directory_uri() ?>/resources/icons/balao.png">
+								<div class="testimonial__item__text">
+									<p><?php echo  $items['text']; ?></p>
+									<h4>
+										<?php echo  $items['author']; ?>
+									</h4>
+								</div>
 							</div>
-						</div>
-					<?php endforeach;  ?>
+						<?php endforeach;  ?>
+					</div>
+					<div class="btn btn-testimonial">
+						ver mais
+					</div>
 				</div>
 			<?php
  

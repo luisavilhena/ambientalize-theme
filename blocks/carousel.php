@@ -23,10 +23,12 @@ function tc_carousel() {
 			<div class="carousel">
 				<?php foreach ($block['carousel'] as $carousel) : ?>
 					<?php if ($carousel['img']) : ?>
-				<div class="item" style ="background: linear-gradient(rgba(173, 222, 0, 0.3), rgba(173, 222, 0, 0.3)), url('<?php echo wp_get_attachment_image_src($carousel['img'],'image_desktop_full_no_crop')[0]; ?>');">
+				<div class="item" style ="background-image: url('<?php echo wp_get_attachment_image_src($carousel['img'],'image_desktop_full_no_crop')[0]; ?>');">
+					<?php if($carousel['text']):?>
 					<div class="item__description rich-text">
 						<?php echo ($carousel['text']) ?>
 					</div>
+					<?php endif; ?>
 				</div>
 					<?php endif; ?>
 				<?php endforeach;  ?>

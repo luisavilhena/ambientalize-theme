@@ -21,10 +21,11 @@ function crb_attach_theme_options() {
     Container::make( 'theme_options', __( 'Theme Options', 'crb' ) )
         ->add_fields( array(
             Field::make( 'text', 'email', 'E-mail' ),
-            Field::make( 'text', 'instagram', 'Instagram' ),
             Field::make( 'text', 'phone', 'Phone' ),
+            Field::make( 'text', 'instagram', 'Instagram' ),
+            Field::make( 'text', 'linkedin', 'Linkedin' ),
+            Field::make( 'text', 'facebook', 'facebook' ),
             Field::make( 'text', 'description', 'Descrição' ),
-            Field::make( 'text', 'link', 'Link de Shop' ),
         ) );
 }
 

@@ -7,31 +7,31 @@ $(document).ready(function(){
 	})
 })
 
+//TESTIMONIAL
+$(document).ready(function(){
+	$('.testimonial__item').css('display', 'none')
+	$('.testimonial__item:first-of-type').css('display', 'block')
+	$('.testimonial__item:nth-of-type(2)').css('display', 'block')
+	$('.btn-testimonial').on("click", function(e){
+		$('.testimonial__item').css('display', 'block')
+		$('.btn-testimonial').css('display', 'none')
+	})
+})
+
 $(document).ready(function(){
   $('.carousel').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
-	  autoplaySpeed: 3000,
+	  autoplay: true,
+	  speed: 2000,
+	  autoplaySpeed: 2000,
 	  dots: true,
 	  adaptiveHeight: true,
   });
 });
 
 
-// $(document).ready(function(){
-// 	$('#name1').attr("placeholder", "NAME")
-// 	$('#email1').attr("placeholder", "E-MAIL")
-// 	$('.captachinput').attr("placeholder", "RECAPCTHA")
-// 	$('input[type="password"]').attr("placeholder", "PASSWORD")
-// })
 
-//LOADING
-// $(document).ready(function(){
-// 	$('.loading').on("click", function(e){
-// 		$(this).css('display', "none")
-// 	})
-// 	$('.loading').delay(7000).fadeOut('slow')
-// })
 
 
 //TEXT BOX CLICk
@@ -41,29 +41,13 @@ $(document).ready(function(){
 	})
 })
 
-//BACKGROUND-COLOR MENU
-// $(document).ready(function(){
-// 	const backgroundColor = $('main').css('background-color')
-// 	const color = $('main').css('color')
-// 	$('header').css('background-color', backgroundColor)
-// 	$('ul#main-menu').css('background-color', backgroundColor)
-// 	$('#mobile-menu-trigger div span').css('background-color', color)
-// 	$('footer').css('background-color', backgroundColor)
-// 	$('header').css('color', color)
-// 	$('footer').css('color', color)
-// 	$('footer svg').css('fill', color)
-// 	$('header svg').css('fill', color)
-// 	$('header h1').css('color', color)
-
-// 	$('#main-menu li a').css('color', color)
-// })
 
 //ABOUT SCROLL
 $(document).ready(function(){
 		// 	var sc = $(window).scrollTop();
 		// console.log(sc)
 	$(function() {
-	  $('.arrow').click(function(e) {
+	  $('.sub-menu li a').click(function(e) {
 	  	const heightElement = window.pageYOffset
 	  	// const heightWindow = $(window).height()
 	  	// console.log(heightElement)
@@ -78,7 +62,6 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(window).on('scroll', function(event) {
 			const heightElement2 = window.pageYOffset
-			console.log(heightElement2)
 					// console.log(heightElement)
 			// if ($(window).width() > 1600) {
 			// 	if ($(window).height() > 1500) {
