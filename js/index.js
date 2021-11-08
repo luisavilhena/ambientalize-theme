@@ -42,20 +42,28 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-	$('nav a').on('click', function(event) {
+	// $('nav a').on('click', function(event) {
 
-	  if (this.hash !== "") {
-	    event.preventDefault();
+	//   if (this.hash !== "") {
+	//     event.preventDefault();
 
-	    var hash = this.hash;
+	//     var hash = this.hash;
 
-	    $('html, body').animate({
-	      scrollTop: $(hash).offset().top - 500
-	    }, 1000, function(){
+	//     $('html, body').animate({
+	//       scrollTop: $(hash).offset().top - 500
+	//     }, 1000, function(){
 
-	      window.location.hash = hash;
-	    });
-	  } 
+	//       window.location.hash = hash;
+	//     });
+	//   } 
+	// });
+	$("nav a").on("click", function (e) {
+	  // 1
+	  e.preventDefault();
+	  // 2
+	  const href = $(this).attr("href");
+	  // 3
+	  $("html, body").animate({ scrollTop: $(href).offset().top -300}, 800);
 	});
 })
 
