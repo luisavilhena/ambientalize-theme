@@ -5,21 +5,21 @@
 						    src="<?php echo get_template_directory_uri() ?>/resources/icons/Logo_horizontal.png"
 						/>
 				<div class="footer__content-first-line__social-media">
-					<h4>siga a gente!</h4>
+					<h5>siga a gente!</h5>
 					<div>
 						<a target="_blank" href="<?php echo carbon_get_theme_option('instagram'); ?>">					
 							<img class=""
-							    src="<?php echo get_template_directory_uri() ?>/resources/icons/instagram.png"
+							    src="<?php echo get_template_directory_uri() ?>/resources/icons/instag.jpg"
 							/>
 						</a>
 						<a target="_blank" href="<?php echo carbon_get_theme_option('linkedin'); ?>">					
 							<img class=""
-							    src="<?php echo get_template_directory_uri() ?>/resources/icons/linkedin.png"
+							    src="<?php echo get_template_directory_uri() ?>/resources/icons/linked.jpg"
 							/>
 						</a>
 						<a target="_blank" href="<?php echo carbon_get_theme_option('face'); ?>">					
 							<img class=""
-							    src="<?php echo get_template_directory_uri() ?>/resources/icons/face.png"
+							    src="<?php echo get_template_directory_uri() ?>/resources/icons/Faceb.jpg"
 							/>
 						</a>
 					</div>

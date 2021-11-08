@@ -157,10 +157,10 @@ ul#main-menu > li:first-of-type {
 ul#main-menu > li:last-of-type {
   padding-right: 0px;
 }
-ul#main-menu > li:nth-of-type(2) {
+ul#main-menu > li:nth-of-type(3) {
   font-family: 'Material Icons';
 }
-ul#main-menu > li:nth-of-type(2):after {
+ul#main-menu > li:nth-of-type(3):after {
   content: '\e5c5';
   font-size: 27px;
   font-family: 'Material Icons';
@@ -172,7 +172,7 @@ ul#main-menu > li:nth-of-type(2):after {
   transform: rotate(0deg);
   transition: transform 0.5s;
 }
-ul#main-menu > li:nth-of-type(2):hover:after {
+ul#main-menu > li:nth-of-type(3):hover:after {
   transform: rotate(180deg);
   transition: transform 0.5s;
 }
@@ -285,11 +285,10 @@ ul#main-menu > li:nth-of-type(2):hover:after {
 }
 header {
   background-color: #adde00;
-  font-family: 'Helvetica-Neue', sans-serif;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 999999;
 }
 header .header__content {
   padding-left: 25px;
@@ -364,7 +363,7 @@ header .header__content #logo-anchor img {
   align-items: flex-start;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .course-list .course-list__item {
   margin: 20px 25px;
@@ -388,6 +387,7 @@ header .header__content #logo-anchor img {
 .course-list .course-list__item .course-list__item__box .course-list__item__box__title h4 {
   text-transform: uppercase;
   margin-bottom: 20px;
+  min-height: 60px;
 }
 .course-list .course-list__item .course-list__item__dropdown {
   z-index: 0;
@@ -512,15 +512,29 @@ header .header__content #logo-anchor img {
   }
 }
 @media screen and (max-width: 850px) {
+  .course-list {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .course-list .course-list__item {
     margin: 20px auto;
-    width: auto;
+    width: 100%;
   }
   .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item > img {
     width: 50px;
   }
   .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item .course-list__item__dropdown__item-text .course-list__item__dropdown__item-text__title img {
     width: 12px;
+  }
+  .course-list__obs {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .course-list__obs .rich-text {
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
 .btn {
@@ -581,7 +595,7 @@ header .header__content #logo-anchor img {
 }
 @media screen and (max-width: 850px) {
   .testimonial {
-    width: 100%;
+    width: 90%;
   }
   .testimonial .testimonial__item {
     margin-right: 0px;
@@ -613,8 +627,8 @@ header .header__content #logo-anchor img {
 }
 @media screen and (max-width: 550px) {
   .text-img {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
     flex-direction: column;
     justify-content: center;
   }
@@ -2541,7 +2555,7 @@ footer .footer__content .footer__content-first-line {
 footer .footer__content .footer__content-first-line > img {
   margin-right: 30px;
 }
-footer .footer__content .footer__content-first-line .footer__content-first-line__social-media h4 {
+footer .footer__content .footer__content-first-line .footer__content-first-line__social-media h5 {
   text-align: center;
   color: white;
   margin-bottom: 20px;
