@@ -18,7 +18,7 @@ function text_img() {
  
 			// ob_start();
 			?>
- 			<div id="<?php $block['menulink']; ?>"class="text-img">
+ 			<div id="<?php echo $block['menulink']; ?>"class="text-img">
  				<div class="rich-text">
  						<?php echo  $block['title']; ?>
  				</div>
