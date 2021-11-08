@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|" rel="stylesheet">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
@@ -51,7 +53,7 @@
       <a
         id="logo-anchor"
         href="<?php echo get_home_url(); ?>">
-        <img class="home-casa-do-estudante--img--bg"
+        <img class=""
             src="<?php echo get_template_directory_uri() ?>/resources/icons/Logo_horizontal.png"
         />
       </a>

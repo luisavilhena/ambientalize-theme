@@ -9,7 +9,7 @@
 					<div>
 						<a target="_blank" href="<?php echo carbon_get_theme_option('instagram'); ?>">					
 							<img class=""
-							    src="<?php echo get_template_directory_uri() ?>/resources/icons/insta.png"
+							    src="<?php echo get_template_directory_uri() ?>/resources/icons/instagram.png"
 							/>
 						</a>
 						<a target="_blank" href="<?php echo carbon_get_theme_option('linkedin'); ?>">					

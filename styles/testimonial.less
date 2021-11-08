@@ -16,7 +16,7 @@
 	}
 	.testimonial__item {
 		position: relative;
-		margin: 20px 25px;
+		margin: 0px 25px 20px 25px;
 		img {
 			width: 420px;
 		}
@@ -24,13 +24,25 @@
 			position: absolute;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: center;
 			top: 70px;
 			bottom: 85px;
 			right: 30px;
 			left: 72px;
 			h4 {
 				margin-top: 15px;
+			}
+		}
+	}
+}
+@media screen and (max-width: @screen-sm)  {
+	.testimonial {
+		width: 100%;
+		.testimonial__item {
+			margin-right: 0px;
+			margin-left: 0px;
+			img {
+				width: 100%;
 			}
 		}
 	}

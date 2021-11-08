@@ -9,6 +9,11 @@ function course_list() {
 	Block::make( 'Lista de Cursos' )
 		->add_fields( array(
 			Field::make('text', 'menulink', 'Link para o menu'),
+			Field::make('rich_text', 'obs', 'Observação'),
+			Field::make('complex', 'icons', 'Ícones')
+			  ->add_fields(array(
+			    Field::make('image', 'icon', 'Ícone'),
+			  )),
 			Field::make( 'select', 'select', __( 'Background options' ) )
 				->set_options( array(
 					'color-green' => verde,
@@ -28,6 +33,7 @@ function course_list() {
 				    Field::make('text', 'hour', 'Texto ao lado do relógio'),
 				    Field::make('image', 'icon', 'Ícone'),
 				    Field::make('text', 'link', 'Link do botão'),
+				    Field::make('text', 'text_link', 'Texto do botão'),
 				    Field::make('text', 'more_text_btn', 'Texto acima do botão'),
 				  ))
 				  ->set_layout('tabbed-vertical')
@@ -65,7 +71,7 @@ function course_list() {
 								<div class="course-list__item__dropdown__item__btn">
 									<h5><?php echo $item['more_text_btn']; ?></h5>
 									<a traget="_blank" class="btn"href="<?php echo $items['link']; ?>">
-										saiba mais
+										<?php echo $item['text_link']; ?>
 									</a>
 								</div>
 							</div>
@@ -73,6 +79,16 @@ function course_list() {
 					</div>
 				</div>
 				<?php endforeach;  ?>
+			</div>
+			<div class="course-list__obs">
+				<div class="rich-text">
+					<?php echo $block['obs']; ?>
+				</div>
+				<div>
+					<?php foreach ($block['icons'] as $icon) : ?>
+					<img src="<?php echo wp_get_attachment_image_src($icon['icon'],'image_desktop_full_no_crop')[0]; ?>">
+					<?php endforeach; ?>
+				</div>
 			</div>
 
 			<?php

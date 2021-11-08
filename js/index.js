@@ -61,33 +61,11 @@ $(document).ready(function(){
 
 
 
-//ABOUT SCROLL
-// $(document).ready(function(){
-// 		// 	var sc = $(window).scrollTop();
-// 		// console.log(sc)
-// 	$(function() {
-// 	  $('.sub-menu li a').click(function(e) {
-// 	  	const heightElement = window.pageYOffset
-// 	  	// const heightWindow = $(window).height()
-// 	  	// console.log(heightElement)
-// 	      $('html, body').animate({ scrollTop: $('html').offset().top  + heightElement + 600}, 1000);
-// 	      // console.log() 
-// 	      // console.log(heightElement,  $('html').offset().top,  $('html').offset().top + heightElement) 
-// 	  });
-// 	});
-// })
 
 //MENU
 $(document).ready(function(){
 	$(window).on('scroll', function(event) {
 			const heightElement2 = window.pageYOffset
-					// console.log(heightElement)
-			// if ($(window).width() > 1600) {
-			// 	if ($(window).height() > 1500) {
-			// 		$('.arrow').css('display', "none")
-			// 	}
-			// }
-			// if ($(window).width() < 1600) {
 				if (heightElement2 > 150) {
 					$('header').addClass('header-animation-small')
 					$('header').removeClass('header-animation-bigger')

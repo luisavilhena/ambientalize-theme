@@ -1,0 +1,36 @@
+.text-img {
+	display: flex;
+	max-width: 1250px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	> img {
+		width: 38%;
+		max-width: 300px;
+	}
+	> div{
+		width: 35%;
+		max-width: 385px;
+		margin-right: 50px;
+	}
+}
+@media screen and (max-width: @screen-xxs) {
+	.text-img {
+		margin-right: 15px;
+		margin-left: 15px;
+		flex-direction: column;
+		justify-content: center;
+		>img {
+			width: 100%;
+		}
+		> div {
+			width: 100%;
+			margin-right: 0px;
+			margin-bottom: 20px;
+		}
+	}
+}
