@@ -3,7 +3,8 @@
   margin-bottom: 100px !important;
   cursor: pointer;
 }
-.carousel button {
+.carousel .slick-next,
+.carousel .slick-prev {
   display: none !important;
 }
 .carousel .slick-list .item {
@@ -520,8 +521,14 @@ header .header__content #logo-anchor img {
     margin: 20px auto;
     width: 100%;
   }
+  .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item {
+    padding: 20px 5px 20px 5px;
+  }
   .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item > img {
-    width: 50px;
+    width: 45px;
+  }
+  .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item .course-list__item__dropdown__item-text .course-list__item__dropdown__item-text__title h4 {
+    font-size: 12px;
   }
   .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item .course-list__item__dropdown__item-text .course-list__item__dropdown__item-text__title img {
     width: 12px;
