@@ -354,9 +354,9 @@ header .header__content #logo-anchor img {
 }
 .title h2 img {
   position: absolute;
-  bottom: -8px;
-  left: -20px;
-  width: 50px;
+  bottom: -6px;
+  left: -21px;
+  width: 45px;
 }
 @media screen and (max-width: 850px) {
   .title {
