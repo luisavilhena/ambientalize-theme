@@ -11,7 +11,9 @@ function tc_carousel() {
 			Field::make('complex', 'carousel', 'Carrossel')
 			  ->add_fields(array(
 			    Field::make('image', 'img', 'Imagem'),
-			    Field::make('rich_text', 'text', 'Descrição')
+			    Field::make('rich_text', 'text', 'Descrição'),
+			    Field::make('text', 'btn', 'Texto do botão'),
+			    Field::make('text', 'link', 'Link')
 			  ))
 			  ->set_layout('tabbed-vertical')
 		) )
@@ -27,6 +29,11 @@ function tc_carousel() {
 					<?php if($carousel['text']):?>
 					<div class="item__description rich-text">
 						<?php echo ($carousel['text']) ?>
+						<?php if($carousel['link']):?>
+						<a href="<?php echo ($carousel['link']) ?>" class="btn">
+							<?php echo ($carousel['btn']) ?>
+						</a>
+						<?php endif; ?>
 					</div>
 					<?php endif; ?>
 				</div>

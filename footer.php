@@ -29,8 +29,12 @@
 				<a target="_blank" href="mailto:<?php echo carbon_get_theme_option('email'); ?>">
 					<?php echo carbon_get_theme_option('email'); ?>
 				</a>
-				<a target="_blank" href="tel:<?php echo carbon_get_theme_option('phone'); ?>">
-					<?php echo carbon_get_theme_option('phone'); ?>
+				<?php if(carbon_get_theme_option('phone')):?>
+				<a target="_blank" href="https://wa.me/55<?php echo carbon_get_theme_option('phone'); ?>?text=Olá,%20gostaria%20de%20fazer%20uma%20pergunta%20para%20o%20Ambientalize,%20por%20favor.">
+				<?php endif; ?>
+				<img class=""
+				    src="<?php echo get_template_directory_uri() ?>/resources/icons/Whatsapp.jpg"
+				/>
 				</a>
 				<p class="footer__content-second-line__description">
 					<?php echo carbon_get_theme_option('description'); ?>"

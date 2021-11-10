@@ -8,7 +8,6 @@ add_action( 'after_setup_theme', 'studio_viridiana' );
 function course_list() {
 	Block::make( 'Lista de Cursos' )
 		->add_fields( array(
-			Field::make('text', 'menulink', 'Link para o menu'),
 			Field::make('rich_text', 'obs', 'Observação'),
 			Field::make('complex', 'icons', 'Ícones')
 			  ->add_fields(array(
@@ -44,7 +43,7 @@ function course_list() {
  
 			// ob_start();
 			?>
-			<div id='<?php echo $block['menulink']; ?>' class="course-list">
+			<div class="course-list">
 				<?php foreach ($block['list'] as $items) : ?>
 				<div class="course-list__item">
 					<div class="course-list__item__box <?php echo $block['select']; ?>">

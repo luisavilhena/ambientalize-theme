@@ -11,13 +11,15 @@ function ambientalize_title() {
 		->add_fields( array(
 			Field::make( 'text', 'title', 'Título' ),
 			Field::make( 'text', 'description', 'Subtítulo' ),
+			Field::make('text', 'menulink', 'Link para o menu'),
 
 		) )
 		->set_render_callback( function ( $block ) {
  
 			// ob_start();
 			?>
- 			<div class="title">
+ 			<div id="<?php echo  $block['menulink']; ?>"
+ 			class="title">
  				<h2>
  					<img src="<?php echo get_template_directory_uri() ?>/resources/icons/adorno.png">
  					<?php echo  $block['title']; ?>

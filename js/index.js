@@ -5,6 +5,9 @@ $(document).ready(function(){
 	$('#mobile-menu-trigger').on("click", function(e){
 		$('#main-header').toggleClass('menu-open')
 	})
+	$('nav ul li a').on("click", function(e){
+		$('#main-header').toggleClass('menu-open')
+	})
 })
 
 //TESTIMONIAL
@@ -63,7 +66,7 @@ $(document).ready(function(){
 	  // 2
 	  const href = $(this).attr("href");
 	  // 3
-	  $("html, body").animate({ scrollTop: $(href).offset().top -300}, 800);
+	  $("html, body").animate({ scrollTop: $(href).offset().top - 150}, 800);
 	});
 })
 
