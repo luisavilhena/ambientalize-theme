@@ -69,7 +69,7 @@ function course_list() {
 								<img src="<?php echo wp_get_attachment_image_src($item['icon'],'image_desktop_full_no_crop')[0]; ?>">
 								<div class="course-list__item__dropdown__item__btn">
 									<h5><?php echo $item['more_text_btn']; ?></h5>
-									<a traget="_blank" class="btn"href="<?php echo $items['link']; ?>">
+									<a target="_blank" class="btn" href="<?php echo $item['link']; ?>">
 										<?php echo $item['text_link']; ?>
 									</a>
 								</div>

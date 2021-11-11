@@ -1160,6 +1160,26 @@ header .header__content #logo-anchor img {
   margin-bottom: 10px;
   font-weight: 600;
 }
+.rich-text h3 {
+  font-size: 23px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.rich-text h4 {
+  font-size: 19px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.rich-text h5 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.rich-text h6 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
 .rich-text a {
   text-decoration: underline;
 }
@@ -1177,6 +1197,14 @@ header .header__content #logo-anchor img {
   .rich-text h2 {
     font-size: 22px;
     line-height: 24px;
+  }
+  .rich-text h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .rich-text h4 {
+    font-size: 16px;
+    line-height: 18px;
   }
   .rich-text p {
     font-size: 15px;
@@ -2252,9 +2280,17 @@ q p:last-of-type {
     font-size: 22px;
     line-height: 24px;
   }
+  h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
   p {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 .structure-container {
