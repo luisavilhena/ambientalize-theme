@@ -472,14 +472,14 @@ header .header__content #logo-anchor img {
   margin-bottom: 80px;
 }
 .course-list__obs .rich-text {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .course-list__obs .rich-text p {
   font-size: 11px;
 }
 .course-list__obs img {
-  margin-right: 15px;
-  width: 50px;
+  margin-right: 5px;
+  width: 70px;
 }
 .color-green .material-icons-round {
   color: #003049;

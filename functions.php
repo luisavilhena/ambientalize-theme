@@ -127,7 +127,7 @@ add_filter('upload_mimes', '_thz_enable_vcard_upload' );
 function mytheme_add_custom_image_sizes() {
     add_image_size( 'vertical-a', 95, 117, true );
     add_image_size( 'vertical-b', 524, 462, true);
-    add_image_size('image_desktop_full_no_crop', 1100 , 1100, false);
+    add_image_size('image_desktop_full_no_crop', 2100 , 1500, false);
 }
 add_action('after_setup_theme', 'mytheme_add_custom_image_sizes' );
 
