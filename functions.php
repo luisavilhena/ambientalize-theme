@@ -1,6 +1,6 @@
 <?php
 
-	function studio_viridiana(){
+	function ambientalize(){
 		wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
 		wp_enqueue_script('customjs',  get_template_directory_uri() . '/js/index.js', array(), NULL, false );
         wp_enqueue_script('slickjs',  get_template_directory_uri() . '/slick/slick.min.js', array(), NULL, false);
@@ -9,7 +9,7 @@
 	}
 
 
-add_action('wp_enqueue_scripts', 'studio_viridiana');
+add_action('wp_enqueue_scripts', 'ambientalize');
 
 
 

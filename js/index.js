@@ -25,7 +25,7 @@ $(document).ready(function(){
   $('.carousel').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
-	  autoplay: true,
+	  // autoplay: true,
 	  speed: 2000,
 	  autoplaySpeed: 2000,
 	  dots: true,
@@ -45,21 +45,15 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-	// $('nav a').on('click', function(event) {
+	$(".carousel p a").on("click", function (e) {
+	  // 1
+	  e.preventDefault();
+	  // 2
+	  const href = $(this).attr("href");
+	  // 3
+	  $("html, body").animate({ scrollTop: $(href).offset().top - 150}, 800);
+	});
 
-	//   if (this.hash !== "") {
-	//     event.preventDefault();
-
-	//     var hash = this.hash;
-
-	//     $('html, body').animate({
-	//       scrollTop: $(hash).offset().top - 500
-	//     }, 1000, function(){
-
-	//       window.location.hash = hash;
-	//     });
-	//   } 
-	// });
 	$("nav a").on("click", function (e) {
 	  // 1
 	  e.preventDefault();
