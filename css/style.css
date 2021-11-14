@@ -448,11 +448,13 @@ header .header__content #logo-anchor img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 77px;
 }
 .course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item .course-list__item__dropdown__item__btn h5 {
   color: #adde00;
   margin-bottom: 10px;
+}
+.course-list .course-list__item .course-list__item__dropdown .course-list__item__dropdown__item .course-list__item__dropdown__item__btn .btn {
+  min-width: 77px;
 }
 .course-list .course-list__item__box.active .material-icons-round {
   transition: transform 0.4s;
