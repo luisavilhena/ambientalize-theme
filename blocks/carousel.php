@@ -30,7 +30,7 @@ function tc_carousel() {
 					<div class="item__description rich-text">
 						<?php echo ($carousel['text']) ?>
 						<?php if($carousel['link']):?>
-						<a href="<?php echo ($carousel['link']) ?>" class="btn">
+						<a  target="_blank" href="<?php echo ($carousel['link']) ?>" class="btn">
 							<?php echo ($carousel['btn']) ?>
 						</a>
 						<?php endif; ?>
