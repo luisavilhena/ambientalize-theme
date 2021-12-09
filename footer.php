@@ -17,7 +17,7 @@
 							    src="<?php echo get_template_directory_uri() ?>/resources/icons/linked.jpg"
 							/>
 						</a>
-						<a target="_blank" href="<?php echo carbon_get_theme_option('face'); ?>">					
+						<a target="_blank" href="<?php echo carbon_get_theme_option('facebook'); ?>">					
 							<img class=""
 							    src="<?php echo get_template_directory_uri() ?>/resources/icons/Faceb.jpg"
 							/>
@@ -30,7 +30,7 @@
 					<?php echo carbon_get_theme_option('email'); ?>
 				</a>
 				<?php if(carbon_get_theme_option('phone')):?>
-				<a target="_blank" href="https://wa.me/55<?php echo carbon_get_theme_option('phone'); ?>?text=Olá,%20gostaria%20de%20fazer%20uma%20pergunta%20para%20o%20Ambientalize,%20por%20favor.">
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=+55<?php echo carbon_get_theme_option('phone'); ?>?text=Olá,%20gostaria%20de%20fazer%20uma%20pergunta%20para%20o%20Ambientalize,%20por%20favor.">
 				<?php endif; ?>
 				<img class=""
 				    src="<?php echo get_template_directory_uri() ?>/resources/icons/Whatsapp.jpg"
