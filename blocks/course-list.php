@@ -15,11 +15,11 @@ function course_list() {
 			  )),
 			Field::make( 'select', 'select', __( 'Background options' ) )
 				->set_options( array(
-					'color-green' => verde,
-					'color-light-blue' => azul_claro,
-					'color-light-blue-2' => azul_claro_2,
-					'color-dark-blue' => azul_escuro,
-					'color-dark-blue-2' => azul_escuro_2,
+					'color-green' => ('verde'),
+					'color-light-blue' => ('azul_claro'),
+					'color-light-blue-2' => ('azul_claro_2'),
+					'color-dark-blue' => ('azul_escuro'),
+					'color-dark-blue-2' => ('azul_escuro_2'),
 				) ),
 			Field::make('complex', "list", "Cursos")
 			->add_fields(array(

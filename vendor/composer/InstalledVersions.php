@@ -30,19 +30,19 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'edf7c64244a77feefbfb9733a9ba2087d609005c',
+    'reference' => '0df7ba90b9a13c045ecc9d3d2efa1ffe4e62d729',
     'name' => 'luvilhena/xi-de-agosto-theme',
   ),
   'versions' => 
   array (
     'htmlburger/carbon-fields' => 
     array (
-      'pretty_version' => 'v3.2.1',
-      'version' => '3.2.1.0',
+      'pretty_version' => 'v3.6.3',
+      'version' => '3.6.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'cd772f1c6c002207eed71f98a8c54ad9403d5644',
+      'reference' => 'd913a5148cb9dc61ed239719c747f4ebb513003f',
     ),
     'luvilhena/xi-de-agosto-theme' => 
     array (
@@ -51,7 +51,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'edf7c64244a77feefbfb9733a9ba2087d609005c',
+      'reference' => '0df7ba90b9a13c045ecc9d3d2efa1ffe4e62d729',
     ),
   ),
 );
