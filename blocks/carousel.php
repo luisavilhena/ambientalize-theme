@@ -29,11 +29,12 @@ function tc_carousel() {
 					<?php if($carousel['text']):?>
 					<div class="item__description rich-text">
 						<?php echo ($carousel['text']) ?>
-						<?php if($carousel['link']):?>
-						<a  target="_blank" href="<?php echo ($carousel['link']) ?>" class="btn">
-							<?php echo ($carousel['btn']) ?>
-						</a>
+						<?php if (!empty($carousel['link'])): ?>
+							<a target="_blank" href="<?php echo esc_url($carousel['link']); ?>" class="btn">
+								<?php echo esc_html($carousel['btn']); ?>
+							</a>
 						<?php endif; ?>
+
 					</div>
 					<?php endif; ?>
 				</div>
